@@ -50,7 +50,7 @@ Make sure no error is shown
 
 Build and push image accordingly
 
-change image name and tag in ```k8sdeploy.yaml``` file
+change image name and tag in ```k8s/deploy.yaml``` file
 
 ```
 kubectl apply -f k8s
