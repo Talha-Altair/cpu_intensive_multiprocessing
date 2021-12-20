@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     while True:
 
-        print("sleeping for 100 seconds")
+        print("sleeping for 15 seconds")
 
         sleep(15)
 
