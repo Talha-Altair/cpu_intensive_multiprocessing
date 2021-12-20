@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cpu-stress
-        image: docker.io/talhaabdurrahman/cpu-stress
+        image: docker.io/talhaabdurrahman/cpu-stress:latest
         ports:
         - containerPort: 80
         resources:

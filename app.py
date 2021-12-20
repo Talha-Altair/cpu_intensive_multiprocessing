@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
         print("sleeping for 100 seconds")
 
-        sleep(100)
+        sleep(15)
 
         print("running load on CPU(s)")
 
