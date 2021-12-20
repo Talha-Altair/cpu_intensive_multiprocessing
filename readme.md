@@ -64,4 +64,10 @@ kubectl apply -f k8s
 watch kubectl get all
 ```
 
+### Exec into a pod
 
+```
+kubectl get pods
+
+kubectl exec -it pod/<pod-name> -- bash
+```
