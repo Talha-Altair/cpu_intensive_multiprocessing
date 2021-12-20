@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
         resources:
           limits:
-            cpu: 500mi
+            cpu: 500m
 ---
 apiVersion: v1
 kind: Service
@@ -33,7 +33,7 @@ spec:
   selector:
     app: cpu-stress
 ---
-apiVersion: autoscaling/v2
+apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: cpu-stress
