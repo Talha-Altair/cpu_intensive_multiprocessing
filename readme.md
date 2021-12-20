@@ -1,21 +1,4 @@
-# Running Locally
-
-## Creating a Local Cluster
-
-### installing kind
-
-#### Linux
-
-```
-curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
-chmod +x ./kind
-mv ./kind /some-dir-in-your-PATH/kind
-```
-
-#### MacOS
-```
-brew install kind
-```
+# Running Deployment
 
 ### installing kubectl
 
@@ -32,11 +15,30 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 brew install kubectl
 ```
 
+### installing kind for local deployment
+
+#### Linux
+
+```
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.1/kind-linux-amd64
+chmod +x ./kind
+mv ./kind /some-dir-in-your-PATH/kind
+```
+
+#### MacOS
+```
+brew install kind
+```
+
 ### Creating a local kind cluster
 
 ```
 kind create cluster --name <cluster-name>
 ```
+
+### Cloud Clusters
+
+Connect to a cloud provided cluster using a connection specific to your provider
 
 ### Verify Cluster status through kubectl
 
